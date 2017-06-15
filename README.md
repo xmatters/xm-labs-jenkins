@@ -41,6 +41,15 @@ After installing the Jenkins http_request plugin, select a build and add build s
 <img src="media/http_request.png">
 </kbd>
 
+And enter the information needed to point to xMatters.
+<kbd>
+<img src="media/build_step_part1.png">
+</kbd>
+<kbd>
+<img src="media/build_step_part2.png">
+</kbd>
+
+
 
 ## xMatters set up
 1. Create a new Shared Library or (In|Out)bound integration
