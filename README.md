@@ -8,7 +8,7 @@ The leading open source automation server, Jenkins provides hundreds of plugins 
 
 # Files
 * [JenkinsLibrary.js](Jenkins.js) - The javascript file to be pasted into a Shared Library. Jenkins is limited to pushing 3 or 4 environmental variables via the http_request plugin.  This library reaches back into Jenkins via a GET command to extract additional information about the build. 
-* [Jenkins(1).zip](Jenkins(1).zip) - The Communication Plan (optional).  You can use this pre built communication plan and import it into your xMatters instance or create one from scratch. 
+* [Jenkins.zip](Jenkins(1).zip) - The Communication Plan (optional).  You can use this pre built communication plan and import it into your xMatters instance or create one from scratch. 
 * [JenkinsIB.js](JenkinsIB.js) - The javascript file to be pasted into the Inbound IB component.  This script calls the library.
 
 # Installation
@@ -28,24 +28,12 @@ Enter the information needed to point to xMatters in the build steps.
 </kbd>
 
 See the below list for the required information:
-<table>
-  <tr>
-    <td>URL:</td>
-    <td>This in an xMatters Inbound Integration URL.  See instructions on how to create. [Inbound Integration](https://help.xmatters.com/OnDemand/xmodwelcome/integrationbuilder/build-integrations.htm)</td>
-  </tr>
-  <tr>
-    <td>HTTP mode:</td>
-    <td>POST</td>
-  </tr>
-  <tr>
-    <td>Pass build params to URL:</td>
-    <td>Yes</td>
-  </tr>
-  <tr>
-    <td>Request Body:</td>
-    <td>JSON formated body of Jenkins Environmental values available to the http_plugin. [Jenkins Set Environment Variables](https://wiki.jenkins-ci.org/display/JENKINS/Building+a+software+project)</td>
-  </tr>
-</table>
+| Input | Value |
+| ----- | _________________________________________________________________|
+| URL   | This in an xMatters Inbound Integration URL.  See instructions on how to create. [Inbound Integration](https://help.xmatters.com/OnDemand/xmodwelcome/integrationbuilder/build-integrations.htm) |
+| HTTP mode | POST |
+| Pass build params to URL| Yes |
+| Request Body | JSON formated body of Jenkins Environmental values available to the http_plugin. [Jenkins Set Environment Variables](https://wiki.jenkins-ci.org/display/JENKINS/Building+a+software+project) |
 
 
 ## xMatters set up
