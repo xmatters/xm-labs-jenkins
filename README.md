@@ -38,7 +38,7 @@ The leading open source automation server, Jenkins provides hundreds of plugins 
 ## Jenkins set up
 After installing the Jenkins http_request plugin, select a build and add build step.
 <kbd>
-<img src="images/http_request.png">
+<img src="media/http_request.png">
 </kbd>
 
 
