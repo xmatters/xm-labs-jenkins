@@ -49,6 +49,12 @@ And enter the information needed to point to xMatters.
 <img src="media/build_step_part2.png">
 </kbd>
 
+See the below list for the required information:
+URL: - This in an xMatters Inbound Integration URL.  See instructions on how to create. [Inbound Integration](https://help.xmatters.com/OnDemand/xmodwelcome/integrationbuilder/build-integrations.htm)
+HTTP mode: POST
+Pass build params to URL: Yes
+Request Body: JSON formated body of Jenkins Environmental values available to the http_plugin.[Jenkins Set Environment Variables](https://wiki.jenkins-ci.org/display/JENKINS/Building+a+software+project)
+
 
 
 ## xMatters set up
