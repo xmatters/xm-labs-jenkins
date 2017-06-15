@@ -1,26 +1,3 @@
-# Instructions on creating the repo
-[Create the repo](https://help.github.com/articles/create-a-repo/) using your own Github account.
-When you create don't add a README or LICENSE. This will make sure to initialize an empty repo
-
-Open a command line and do the following. Where `MY_NEW_REPO_NAME_HERE` is the name of your github repo and `MY_NEW_REPO_URL` is the url generated when you create the new repo. 
-
-```bash
-# Clone the template repo to the local file system
-git clone https://github.com/xmatters/xm-labs-template.git
-# Change the directory name to avoid confusion and then cd into it
-mv xm-labs-template MY_NEW_REPO_NAME_HERE  
-cd MY_NEW_REPO_NAME_HERE
-# We have to tell git that the place it needs to push is not where it came from
-git remote set-url origin https://MY_NEW_REPO_URL.git
-# Pust to the remote repo
-git push -u origin master
-```
-
-Then, edit all your files and drop any new ones into the `MY_NEW_REPO_NAME_HERE` directory. Once you are finished, let Travis know and he will then fork it to the xMatters account and update the necessary links in the xM Labs main page. From there if you update your repo, those changes can be merged into the xMatters account repo and everything will be kept up to date!
-
-# Template below:
----
-
 # Jenkins
 The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project. Check out the sweet video [here](media/mysweetvideo.mov). 
 
@@ -30,8 +7,9 @@ The leading open source automation server, Jenkins provides hundreds of plugins 
 * xMatters account - If you don't have one, [get one](https://www.xmatters.com)!
 
 # Files
-* [Jenkins.js](Jenkins.js) - The javascript file to be pasted into a Shared Library. Jenkins is limited to pushing 3 or 4 environmental variables via the http_request plugin.  This library reaches back into Jenkins via a GET command to extract additional information about the build. 
-* [MySweetCommPlan.zip](MySweetCommPlan.zip) - The comm plan (if needed) that has all the coold scripts and email format and such. 
+* [JenkinsLibrary.js](Jenkins.js) - The javascript file to be pasted into a Shared Library. Jenkins is limited to pushing 3 or 4 environmental variables via the http_request plugin.  This library reaches back into Jenkins via a GET command to extract additional information about the build. 
+* [Jenkins(1).zip](Jenkins(1).zip) - The comm plan (if needed) that has all the coold scripts and email format and such. 
+* [JenkinsIB.js](JenkinsIB.js) - The javascript file to be pasted into the Inbound IB component.  This script calls the library.
 
 # Installation
 
@@ -58,13 +36,20 @@ Request Body: JSON formated body of Jenkins Environmental values available to th
 
 
 ## xMatters set up
-1. Create a new Shared Library or (In|Out)bound integration
-2. Add this code here:
+1. Import the Communication Plan (see files).  If this step is done you can skip steps 2 and 3.
+2. Create a new Shared Library 
+    Add this code here:
    ```
    var items = [];
    items.push( { "stuff": "value"} );
    console.log( 'Do stuff' );
+3. Create (In|Out)bound integration
+  Add this code here:
    ```
+   var items = [];
+   items.push( { "stuff": "value"} );
+   console.log( 'Do stuff' );
+   
    
 # Testing
 Be specific. What should happen to make sure this code works? What would a user expect to see?
