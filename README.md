@@ -43,7 +43,7 @@ See the below list for the required information:
   </tr>
   <tr>
     <td>Request Body:</td>
-    <td>JSON formated body of Jenkins Environmental values available to the http_plugin.[Jenkins Set Environment Variables](https://wiki.jenkins-ci.org/display/JENKINS/Building+a+software+project)</td>
+    <td>JSON formated body of Jenkins Environmental values available to the http_plugin. [Jenkins Set Environment Variables](https://wiki.jenkins-ci.org/display/JENKINS/Building+a+software+project)</td>
   </tr>
 </table>
 
