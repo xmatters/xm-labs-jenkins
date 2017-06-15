@@ -21,16 +21,16 @@ Then, edit all your files and drop any new ones into the `MY_NEW_REPO_NAME_HERE`
 # Template below:
 ---
 
-# Product Name Goes Here
-A note about what the product is and what this integration/scriptlet is all about. Check out the sweet video [here](media/mysweetvideo.mov). 
+# Jenkins
+The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project. Check out the sweet video [here](media/mysweetvideo.mov). 
 
 # Pre-Requisites
-* Version 453 of App XYZ
-* Account in Application ABC
+* Jenkins Instance with the http_request plugin installed.
+* Jenkins Communication Plan (see files) imported into xMatters or created in xMatters.
 * xMatters account - If you don't have one, [get one](https://www.xmatters.com)!
 
 # Files
-* [FileA.js](FileA.js) - The javascript file to be pasted into a Shared Library. It generally does xyz. 
+* [Jenkins.js](Jenkins.js) - The javascript file to be pasted into a Shared Library. Jenkins is limited to pushing 3 or 4 environmental variables via the http_request plugin.  This library reaches back into Jenkins via a GET command to extract additional information about the build. 
 * [MySweetCommPlan.zip](MySweetCommPlan.zip) - The comm plan (if needed) that has all the coold scripts and email format and such. 
 
 # Installation
