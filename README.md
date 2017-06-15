@@ -50,22 +50,22 @@ See the below list for the required information:
 
 ## xMatters set up
 1. Import the Communication Plan (see files).  If this step is done you can skip steps 2 and 3.
-2. Create a new Shared Library 
-    Add this code here:
-   ```
-   var items = [];
-   items.push( { "stuff": "value"} );
-   console.log( 'Do stuff' );
-3. Create (In|Out)bound integration
-  Add this code here:
-   ```
-   var items = [];
-   items.push( { "stuff": "value"} );
-   console.log( 'Do stuff' );
-   
+2. Create a new Shared Library and add the code from the JenkinsLibrary.js file.  
+3. Create (In|Out)bound integration and add the code from the JenkinsIB.js file.
+4. Configure the xMatters Endpoints. [xMatters Endpoints](https://help.xmatters.com/OnDemand/xmodwelcome/integrationbuilder/configure-endpoints.htm)
+5. Create a DevOps group in xMatters and add your self to the group. [xMatters Groups](https://help.xmatters.com/OnDemand/groups/groups.htm).  The name of the DevOps group can be changed in the Inbound IB script.
+  
    
 # Testing
-Be specific. What should happen to make sure this code works? What would a user expect to see?
+Run a Build in Jenkins.  You should see in the console, Jenkins executing the HTTP_Request Build step and a status of 202.
+<kbd>
+<img src="media/JenkinsConsole.png">
+</kbd>
+
+A message should come through on your devices.  Which ever devices you have configured in xMatters.
+<kbd>
+<img src="media/DeviceMessage.png">
+</kbd>
 
 # Troubleshooting
-Optional section for how to troubleshoot. Especially anything in the source application that an xMatters developer might not know about. 
+View xMatters Activity Stream to determine issues with Jenkins connectivity.
