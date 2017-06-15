@@ -34,10 +34,11 @@ The leading open source automation server, Jenkins provides hundreds of plugins 
 * [MySweetCommPlan.zip](MySweetCommPlan.zip) - The comm plan (if needed) that has all the coold scripts and email format and such. 
 
 # Installation
-Details of the installation go here. 
 
-## Application ABC set up
-Specific steps go here
+## Jenkins set up
+After installing the Jenkins http_request plugin, select a build and add build step.
+
+
 
 ## xMatters set up
 1. Create a new Shared Library or (In|Out)bound integration
