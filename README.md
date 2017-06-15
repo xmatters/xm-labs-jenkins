@@ -28,8 +28,9 @@ Enter the information needed to point to xMatters in the build steps.
 </kbd>
 
 See the below list for the required information:
+
 | Input | Value |
-| ----- | _________________________________________________________________|
+| ----- | ------|
 | URL   | This in an xMatters Inbound Integration URL.  See instructions on how to create. [Inbound Integration](https://help.xmatters.com/OnDemand/xmodwelcome/integrationbuilder/build-integrations.htm) |
 | HTTP mode | POST |
 | Pass build params to URL| Yes |
