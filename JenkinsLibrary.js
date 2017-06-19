@@ -25,7 +25,7 @@ exports.getBuildStatus = function(jobname) {
         'path': '/job/' + jobname + '/lastBuild/api/json',
         'headers': {
             'Content-Type': 'application/json',
-            "authorization": "Basic YWRtaW46dGVzdA=="
+            "authorization": "Basic [authorization token]"
         }
     });
 
