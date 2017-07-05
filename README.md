@@ -1,15 +1,14 @@
 # Jenkins
-The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project. Check out the sweet video [here](media/JenkinsBuild.mp4). 
+The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project. Check out a video of the integration in action [here](media/JenkinsBuild.mp4). 
 
 # Pre-Requisites
 * Jenkins Instance with the http_request plugin installed.
-* Jenkins Communication Plan (see files) imported into xMatters or created in xMatters.
 * xMatters account - If you don't have one, [get one](https://www.xmatters.com)!
 
 # Files
 * [JenkinsLibrary.js](JenkinsLibrary.js) - The javascript file to be pasted into a Shared Library. Jenkins is limited to pushing 3 or 4 environmental variables via the http_request plugin.  This library reaches back into Jenkins via a GET command to extract additional information about the build. 
-* [Jenkins.zip](Jenkins.zip) - The Communication Plan (optional).  You can use this pre built communication plan and import it into your xMatters instance or create one from scratch. 
 * [JenkinsIB.js](JenkinsIB.js) - The javascript file to be pasted into the Inbound IB component.  This script calls the library.
+* [Jenkins.zip](Jenkins.zip) - The Communication Plan (optional).  You can use this pre built communication plan and import it into your xMatters instance or create one from scratch. 
 
 # Installation
 
@@ -38,12 +37,24 @@ See the below list for the required information:
 
 
 ## xMatters set up
-1. Import the Communication Plan (see files).  If this step is done you can skip steps 2 and 3.
-2. Create a new Shared Library and add the code from the JenkinsLibrary.js file.  
-3. Create (In|Out)bound integration and add the code from the JenkinsIB.js file.
-4. Configure the xMatters Endpoints. [xMatters Endpoints](https://help.xmatters.com/OnDemand/xmodwelcome/integrationbuilder/configure-endpoints.htm)
-5. Create a DevOps group in xMatters and add your self to the group. [xMatters Groups](https://help.xmatters.com/OnDemand/groups/groups.htm).  The name of the DevOps group can be changed in the Inbound IB script.
-  
+### Option 1: Import the Comm Plan
+1. Import the Communication Plan (see files).  If it is desired to add Jenks
+
+
+### Option 2: Add the Jenkins code to an existing comm plan
+1. Navigate to the Integration Builder tab on an existing comm plan. 
+2. Create a new Shared Library and add the code from the JenkinsLibrary.js file. 
+3. Create an inbound or outbound integration and add the code from the JenkinsIB.js file.
+4. Configure the xMatters Endpoints. For help, see the [xMatters Endpoints](https://help.xmatters.com/OnDemand/xmodwelcome/integrationbuilder/configure-endpoints.htm) page. 
+5. Create a group in xMatters and add yourself to the group. For help, see the [xMatters Groups](https://help.xmatters.com/OnDemand/groups/groups.htm) page.  The name of the group can be changed in the Inbound IB script with these lines:
+```javascript
+// Define recipients
+var recipients = [];
+// Add a recipient targeting a user or group
+recipients.push({
+    'targetName': 'DevOps'
+});
+```
    
 # Testing
 Run a Build in Jenkins.  You should see in the console, Jenkins executing the HTTP_Request Build step and a status of 202.
