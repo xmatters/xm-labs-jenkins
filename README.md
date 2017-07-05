@@ -37,16 +37,18 @@ See the below list for the required information:
 
 
 ## xMatters set up
-### Option 1: Import the Comm Plan
+**Option 1: Import the Comm Plan**
 1. Import the Communication Plan (see files).  If it is desired to add Jenks
 
 
-### Option 2: Add the Jenkins code to an existing comm plan
+**Option 2: Add the Jenkins code to an existing comm plan**
 1. Navigate to the Integration Builder tab on an existing comm plan. 
 2. Create a new Shared Library and add the code from the JenkinsLibrary.js file. 
 3. Create an inbound or outbound integration and add the code from the JenkinsIB.js file.
-4. Configure the xMatters Endpoints. For help, see the [xMatters Endpoints](https://help.xmatters.com/OnDemand/xmodwelcome/integrationbuilder/configure-endpoints.htm) page. 
-5. Create a group in xMatters and add yourself to the group. For help, see the [xMatters Groups](https://help.xmatters.com/OnDemand/groups/groups.htm) page.  The name of the group can be changed in the Inbound IB script with these lines:
+
+**Complete the integration**
+1. Click the Endpoints button and select the Jenkins endpoint. For help, see the [xMatters Endpoints](https://help.xmatters.com/OnDemand/xmodwelcome/integrationbuilder/configure-endpoints.htm) page. Update the base url and authentication information to reflect the Jenkins environment. 
+2. Create a group in xMatters and add yourself to the group. For help, see the [xMatters Groups](https://help.xmatters.com/OnDemand/groups/groups.htm) page.  The name of the group can be changed in the Inbound IB script with these lines:
 ```javascript
 // Define recipients
 var recipients = [];
