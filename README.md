@@ -38,7 +38,7 @@ See the below list for the required information:
 
 ## xMatters set up
 **Option 1: Import the Comm Plan**
-1. Import the Communication Plan (see files).  If it is desired to add Jenks
+1. Import the [Jenkins.zip](Jenkins.zip) Communication Plan.  
 
 
 **Option 2: Add the Jenkins code to an existing comm plan**
