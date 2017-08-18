@@ -1,5 +1,7 @@
 # Jenkins
-The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project. Check out a video of the integration in action [here](media/JenkinsBuild.mp4). 
+The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project. Check out a video of the integration in action:
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ntXD6ZxNJ_I/0.jpg)](https://www.youtube.com/watch?v=ntXD6ZxNJ_I)
 
 # Pre-Requisites
 * Jenkins Instance with the http_request plugin installed.
