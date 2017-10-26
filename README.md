@@ -3,6 +3,15 @@ The leading open source automation server, Jenkins provides hundreds of plugins 
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ntXD6ZxNJ_I/0.jpg)](https://www.youtube.com/watch?v=ntXD6ZxNJ_I)
 
+---------
+
+<kbd>
+  <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/disclaimer.png">
+</kbd>
+
+---------
+
+
 # Pre-Requisites
 * Jenkins Instance with the http_request plugin installed.
 * xMatters account - If you don't have one, [get one](https://www.xmatters.com)!
