@@ -19,7 +19,7 @@ The leading open source automation server, Jenkins provides hundreds of plugins 
 # Files
 * [JenkinsLibrary.js](JenkinsLibrary.js) - The javascript file to be pasted into a Shared Library. Jenkins is limited to pushing 3 or 4 environmental variables via the http_request plugin.  This library reaches back into Jenkins via a GET command to extract additional information about the build. 
 * [JenkinsIB.js](JenkinsIB.js) - The javascript file to be pasted into the Inbound IB component.  This script calls the library.
-* [Jenkins.zip](Jenkins.zip) - The Communication Plan (optional).  You can use this pre built communication plan and import it into your xMatters instance or create one from scratch. 
+* [Jenkins.zip](Jenkins.zip) - The Workflow (optional).  You can use this pre built workflow and import it into your xMatters instance or create one from scratch. 
 
 # Installation
 
@@ -48,12 +48,12 @@ See the below list for the required information:
 
 
 ## xMatters set up
-**Option 1: Import the Comm Plan**
-1. Import the [Jenkins.zip](Jenkins.zip) Communication Plan.  
+**Option 1: Import the Workflow**
+1. Import the [Jenkins.zip](Jenkins.zip) Workflow.  
 
 
-**Option 2: Add the Jenkins code to an existing comm plan**
-1. Navigate to the Integration Builder tab on an existing comm plan. 
+**Option 2: Add the Jenkins code to an existing workflow**
+1. Navigate to the Integration Builder tab on an existing workflow. 
 2. Create a new Shared Library and add the code from the JenkinsLibrary.js file. 
 3. Create an inbound or outbound integration and add the code from the JenkinsIB.js file.
 
